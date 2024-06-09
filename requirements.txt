@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+spotipy
+python-dotenv
+# Add any other dependencies here
