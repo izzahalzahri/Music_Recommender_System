@@ -204,20 +204,5 @@ else:
         else:
             st.write("Please enter a song title or artist name.")
 
-# Initialize click counter in session state
-if 'click_count' not in st.session_state:
-    st.session_state.click_count = 0
-    if input_type == 'Genre':
-    genre = st.selectbox('Select a genre', genres)
-    if st.button('Recommend Songs and Playlists'):
-        # Increment the click counter
-        st.session_state.click_count += 1
-
-        with st.spinner('Finding songs and playlists...'):
-            # Recommend tracks by genre
-            song_recommendations = recommend_tracks_by_genre(genre, n_recommendations=20)
-st.sidebar.write(f"Total Recommendations Clicked: {st.session_state.click_count}")
-
-
 # To run the app:
 # streamlit run app.py
