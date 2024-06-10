@@ -7,7 +7,7 @@ from spotify_integration import search_tracks, recommend_tracks_by_genre, recomm
 import streamlit as st
 
 
-load_dotenv('spotify.env')
+load_dotenv()
 
 SPOTIPY_CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')
 SPOTIPY_CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
