@@ -1,5 +1,10 @@
+import streamlit as st
 from dotenv import load_dotenv
 import os
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+from spotify_integration import search_tracks, recommend_tracks_by_genre, recommend_playlists_by_track, get_all_genres
+
 
 load_dotenv('spotify.env')
 
