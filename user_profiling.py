@@ -5,6 +5,7 @@
 
 from sklearn.cluster import KMeans
 import pandas as pd
+from spotify_integration import search_tracks
 
 # Sample dataset with track features
 data = pd.DataFrame({
