@@ -9,7 +9,6 @@ SPOTIPY_CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET))
 
 
-
 import streamlit as st
 from spotify_integration import search_tracks, recommend_tracks_by_genre, recommend_playlists_by_track, get_all_genres
 
