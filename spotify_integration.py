@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 import pandas as pd
 
-load_dotenv()
+load_dotenv(spotify.env)
 
 SPOTIPY_CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')
 SPOTIPY_CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
