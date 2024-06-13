@@ -85,7 +85,7 @@ def load_css():
 load_css()
 
 # Page title
-st.title('🎧 Hybrid Music Recommender System with Diversity and Genre-Based Recommendations')
+st.title('🎧 Music Recommendation System with Diversity and Genre-Based Recommendations')
 
 # Load genres from Spotify
 genres = get_all_genres()
